@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form id="trainForm">
+        <label for="trainNumber">Train Number:</label>
+        <input type="text" id="trainNumber" required><br><br>
+        
+        <label for="arrivalTime">Arrival Time:</label>
+        <input type="time" id="arrivalTime" required><br><br>
+        
+        <label for="departureTime">Departure Time:</label>
+        <input type="time" id="departureTime" required><br><br>
+        
+        <button type="submit">Add Train</button>
+    </form>
+    <h1>Train Schedule Manager</h1>
+
+    <!-- Button to Add Train and display the schedule -->
+    <button onclick="addSampleTrains()">Add Sample Trains</button>
+
+    <h2>Current Train Schedule:</h2>
+    <div id="schedule"></div>
+
+
+  
+     <script src="train.js"></script>
+</body>
+</html> 
